@@ -12,7 +12,6 @@
                     <div class="modal__list-input">
                         <input
                             ref="listInput"
-                            type="text"
                             placeholder="Название"
                             v-model="header"
                         />
@@ -23,17 +22,13 @@
         </div>
         <div class="nav">
             <div class="container">
-                <div class="nav__block" ref="input">
+                <div class="nav__block">
                     <div class="nav__head">
                         <h1 class="nav__header">Заметки</h1>
                         <div class="nav__menu"></div>
                     </div>
                     <div class="nav__search">
-                        <input
-                            v-model="searchQuery"
-                            type="text"
-                            placeholder="Поиск"
-                        />
+                        <input v-model="searchQuery" placeholder="Поиск" />
                     </div>
                 </div>
             </div>

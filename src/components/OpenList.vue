@@ -25,7 +25,6 @@
                     <div class="modal__create-input">
                         <input
                             ref="listInput"
-                            type="text"
                             placeholder="Название"
                             v-model="listName"
                         />

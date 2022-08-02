@@ -71,7 +71,6 @@
                     <input
                         ref="headerInput"
                         v-model="header"
-                        type="text"
                         placeholder="Название"
                     />
                 </div>
