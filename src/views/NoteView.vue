@@ -1,13 +1,13 @@
 <template>
-    <note-list />
+    <open-note />
 </template>
 
 <script>
-import NoteList from "@/components/NoteList.vue";
+import OpenNote from "@/components/OpenNote.vue";
 
 export default {
     components: {
-        NoteList,
+        OpenNote,
     },
 };
 </script>

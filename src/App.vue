@@ -1,30 +1,46 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "@/assets/scss/mixin.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 }
 
-nav {
-  padding: 30px;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    &__alert {
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        width: 30%;
+        transform: translateX(-50%);
+        @include media("max", "lg") {
+            width: 50%;
+        }
+        @include media("max", "sm") {
+            width: 70%;
+        }
     }
-  }
+}
+
+input:focus-visible {
+    outline: none;
 }
 </style>
