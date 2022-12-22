@@ -5,5 +5,8 @@ module.exports = {
     themeColor: '#61401b',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: '#61401b',
+    workboxOptions: {
+      exclude: ['_redirects'],
+    }
   }
 }
