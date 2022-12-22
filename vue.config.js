@@ -1,5 +1,4 @@
 module.exports = {
-  publicPath: '/notes/',
   pwa: {
     name: 'Заметки',
     short_name: 'Заметки',
